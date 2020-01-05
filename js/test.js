@@ -16,15 +16,57 @@ for (let i = 0; i < 2; i++) {
     let a = prompt("Enter compulsory cost item this month", ""),
         b = prompt("How much will it cost", "");
 
-    if ( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null
-        && a != '' && b != '' && a.length < 50) {
+    if ( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
+
         console.log("done");
         appData.expenses[a] = b;
+
     } else {
-        console.log("Hey! Change your Data")
+        console.log("Hey! Change your Data");
         i--;
     }
-};
+}
+
+// Use While
+
+// let i = 0;
+// while (i < 2) {
+//     let a = prompt("Enter compulsory cost item this month", ""),
+//         b = prompt("How much will it cost", "");
+
+//     if ( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
+
+//         console.log("done");
+//         appData.expenses[a] = b;
+
+//     } else {
+//         console.log("Hey! Change your Data");
+
+//         i--;
+//     }
+//     i++;
+// }
+
+// Use do ... while
+
+// let i = 0;
+// do {
+//     let a = prompt("Enter compulsory cost item this month", ""),
+//     b = prompt("How much will it cost", "");
+
+//     if ( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
+
+//     console.log("done");
+//     appData.expenses[a] = b;
+
+//     } else {
+//     console.log("Hey! Change your Data");
+//     i--;
+//     }
+//     i++;
+// }
+
+// while(i < 2);
 
 appData.moneyPerDay = appData.budget / 30;
 
